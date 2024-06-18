@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        
+<form>
+    <label>HOLC Map Overlay</label>
+    <input type="range" name="bgopacity" id="bgopacity" value="50" min="0" max="100" step="1" onchange="rangevalue.value=value">
+    <output id="rangevalue">50</output>
+</form>
+        <div class="parent">
+            <img class="image1" width="906" src="apush docs.png"></img>
+    
+            <img class="image2" id="s1" width="862" src="overlay.png"></img>
+        </div>
+        <script>// Opacity Slider
+            $('#bgopacity').on('input', function (value) {
+                $('#s1').css({
+                    opacity: $(this).val() * '.01'
+                });
+            });</script>
+    </body>
+</html>

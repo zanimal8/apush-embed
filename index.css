@@ -1,0 +1,17 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+.image1 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+.image2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity : 0.5;
+  }
+
